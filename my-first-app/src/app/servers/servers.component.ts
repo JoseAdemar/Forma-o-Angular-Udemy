@@ -25,7 +25,7 @@ export class ServersComponent implements OnInit {
   }
 
   onUpadteServerName(event: Event){
-     this.serverName = (<HTMLInputElement>event.target).value;
+    debugger; this.serverName = (<HTMLInputElement>event.target).value;
   }
 
 }
