@@ -1,0 +1,9 @@
+<div class="container">
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" name="name" [(ngModel)]="name" placeholder="Digite o seu nome aqui">
+    <p>{{ name }}</p>
+    <br>
+    <button class="btn btn-primary" [disabled]="isInputNameEmpty(name)" (click)="clearInput(name)">Reset user</button>
+
+</div>
