@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class DatabindingExercicioComponent {
 
   name: string = '';
+  showSecret: boolean;
+  showDetailsLog = [];
 
   isInputNameEmpty(name: String){
     name = this.name;
@@ -18,5 +20,10 @@ export class DatabindingExercicioComponent {
 
   clearInput(name: string){
     name =  this.name = '';
+  }
+
+  onAddToggleDetails(){
+    this.showSecret = !this.showSecret;
+    this.showDetailsLog.push(this.showDetailsLog.length + 1);
   }
 }
