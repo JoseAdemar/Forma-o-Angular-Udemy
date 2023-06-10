@@ -13,9 +13,8 @@ export class DatabindingExercicioComponent {
 
   isInputNameEmpty(name: String){
     name = this.name;
-    if(name === ''){
-      return true;
-    }
+    name === '' ? true : false
+    return !name;
   }
 
   clearInput(name: string){
@@ -24,6 +23,6 @@ export class DatabindingExercicioComponent {
 
   onAddToggleDetails(){
     this.showSecret = !this.showSecret;
-    this.showDetailsLog.push(this.showDetailsLog.length + 1);
+    this.showDetailsLog.push(new Date());
   }
 }
